@@ -2,7 +2,7 @@
 
 I couldn't find a tool which could generate weekly "Query Analytics" reports for our developers, so I wrote pmm\_rep to solve this problem.
 
-This script will create a multipart email containing both a html and a 79 width column fixed text version.
+This script will create a multipart email report containing both a html and a 79 width column fixed text version.
 
 ## Prerequisites  
 
