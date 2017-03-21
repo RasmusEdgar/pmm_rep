@@ -1,0 +1,18 @@
+use utf8;
+{
+basic_auth => 'yes',
+user => '<pmm web user>',
+password => '<pmm web user password',
+recipients => '<list of email recipients>',
+sender => '<name < email >>',
+html_mail_template => '<template path to html mail template>',
+text_mail_template => '<template path to text mail template>',
+ssl => 'no',
+pmm_url => '<server name>/qan-api/qan/profile/<profile id>',
+range_begin_hhmmss => '07:00:00',
+range_end_hhmmss => '07:00:00',
+intro => '<p>Slow Query Top 10</p>
+<p><em>"The summary table contains top 10 queries ranked by %GTT (percent of grand total time), which is the percentage of time that the MySQL server spent executing a specific query, compared to the total time it spent executing all queries during the selected period of time."</em></p>
+<p>Add some more text ...</p>',
+title_part => '<title part before period>'
+}

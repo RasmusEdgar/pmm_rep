@@ -1,0 +1,40 @@
+% my ($title, $intro, $repdataq) = @_;
+<%= $title %>
+
+<%= $intro %>
+
+% foreach my $hash_ref ( @{$repdataq} ) {
+% if ( $hash_ref->{Rank} == 0 ) {
+% my $perc = sprintf("%.2f%%", $hash_ref->{Percentage} * 100 );
+% my $QPSround = sprintf("%.4f", $hash_ref->{QPS});
+% my $Loadround = sprintf("%.4f", $hash_ref->{Load});
+% my $Secround = sprintf("%.2f", $hash_ref->{Stats}->{Avg});
+
+Total
+
+Load: <%= $Loadround %>(<%= $perc %>)
+QPS/Count: <%= $hash_ref->{QPS} %> QPS / <%= $hash_ref->{Stats}->{Cnt} %>
+Latency: <%= $Secround %> sec avg
+
+% } else {
+% my $perc = sprintf("%.2f%%", $hash_ref->{Percentage} * 100 );
+% my $QPSround = sprintf("%.4f", $hash_ref->{QPS});
+% my $Loadround = sprintf("%.4f", $hash_ref->{Load});
+% my $Secround = sprintf("%.2f", $hash_ref->{Stats}->{Avg});
+% my $Minsecround = sprintf("%.2f", $hash_ref->{Stats}->{Min});
+% my $Maxsecround = sprintf("%.2f", $hash_ref->{Stats}->{Max});
+% my $P95secround = sprintf("%.2f", $hash_ref->{Stats}->{P95});
+<%= $hash_ref->{Rank}%>: <%= $hash_ref->{Abstract} %>
+
+Load: <%= $Loadround %>(<%= $perc %>)
+QPS/Count: <%= $hash_ref->{QPS} %> QPS / <%= $hash_ref->{Stats}->{Cnt} %>
+Latency: <%= $Secround %> sec avg
+Min: <%= $Minsecround %> sec
+Max: <%= $Maxsecround %> sec
+P95: <%= $P95secround %> sec
+
+Query: 
+<%= $hash_ref->{Fingerprint} %>
+
+% }
+% }
