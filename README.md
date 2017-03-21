@@ -24,7 +24,7 @@ I recommend that this script runs in a local::lib environment and there is a pos
    <pre><code class="bash">cp ./pmm_rep/config/config.example ./pmm_rep/config/config && vim ./pmm_rep/config/config</code></pre>
 1. Test script is working by running it by hand.
 1. Schedule a cronjob:
-   <pre><code class="cron">PATH=/opt/pmm_reporter/perl5/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pmm_reporter/.local/bin:/opt/pmm_reporter/bin
+   <pre><code>PATH=/opt/pmm_reporter/perl5/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pmm_reporter/.local/bin:/opt/pmm_reporter/bin
 PERL5LIB=/opt/pmm_reporter/perl5/lib/perl5
 PERL_MM_OPT=INSTALL_BASE=/opt/pmm_reporter/perl5
 30 10 * * 1 cd /opt/pmm_reporter/pmm_rep/script && ./pmm_rep.pl > /dev/null 2>&1</code></pre>
