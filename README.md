@@ -4,6 +4,8 @@ I couldn't find a tool which could generate weekly "Query Analytics" reports for
 
 This script will create a multipart email report containing both a html and a 79 width column fixed text version.
 
+NOTE: The script is hardcoded to set begin date to the preceding monday. This should be easy to adjust yourself.
+
 ## Prerequisites  
 
 I recommend that this script runs in a local::lib environment and there is a postfix/ssmtp/sendmail relay service running on the platform (Linux) where you choose deploy it.
