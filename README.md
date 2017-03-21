@@ -2,7 +2,7 @@
 
 I couldn't find a tool which could generate weekly "Query Analytics" reports for our developers, so I wrote pmm\_rep to solve this problem.
 
-This script will create a multipart email report containing both a html and a 79 width column fixed text version.
+This script will fetch data from the PMM qan-api and create a multipart email report containing both a html and a 79 width column fixed text version.
 
 NOTE: The script is hardcoded to set begin date to the preceding monday. This should be pretty straightforward to change to something else.
 
