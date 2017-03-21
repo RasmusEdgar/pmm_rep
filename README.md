@@ -4,7 +4,7 @@ I couldn't find a tool which could generate weekly "Query Analytics" reports for
 
 This script will create a multipart email report containing both a html and a 79 width column fixed text version.
 
-NOTE: The script is hardcoded to set begin date to the preceding monday. This should be easy to adjust yourself.
+NOTE: The script is hardcoded to set begin date to the preceding monday. This should be pretty straightforward to change to something else.
 
 ## Prerequisites  
 
