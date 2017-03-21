@@ -23,7 +23,7 @@ I recommend that this script runs in a local::lib environment and there is a pos
 1. Copy and adjust config:
    <pre><code class="bash">cp ./pmm_rep/config/config.example ./pmm_rep/config/config && vim ./pmm_rep/config/config</code></pre>
 1. Test script is working by running it by hand.
-<pre><code class="bash">cd ./pmm_rep/script && ./pmm_rep.pl</code></pre>
+   <pre><code class="bash">cd ./pmm_rep/script && ./pmm_rep.pl</code></pre>
 1. Schedule a cronjob:
    <pre><code>PATH=/opt/pmm_reporter/perl5/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pmm_reporter/.local/bin:/opt/pmm_reporter/bin
    PERL5LIB=/opt/pmm_reporter/perl5/lib/perl5
