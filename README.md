@@ -27,4 +27,5 @@ I recommend that this script runs in a local::lib environment and there is a pos
    ```PATH=/opt/pmm_reporter/perl5/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pmm_reporter/.local/bin:/opt/pmm_reporter/bin
 PERL5LIB=/opt/pmm_reporter/perl5/lib/perl5
 PERL_MM_OPT=INSTALL_BASE=/opt/pmm_reporter/perl5
-30 10 * * 1 cd /opt/pmm_reporter/pmm_rep/script && ./pmm_rep.pl > /dev/null 2>&1```
+30 10 * * 1 cd /opt/pmm_reporter/pmm_rep/script && ./pmm_rep.pl > /dev/null 2>&1
+```
