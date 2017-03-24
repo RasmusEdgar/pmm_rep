@@ -16,7 +16,7 @@ I recommend that this script runs in a local::lib environment and there is a pos
    <pre><code class="bash">sudo useradd -d /opt/pmm_reporter -m -s /bin/bash -c"pmm reporter" pmm_reporter
    sudo su - pmm_reporter</code></pre>
 1. Run the following as the dedicated user to set up a local::lib environment: 
-   <pre><code class="shell">wget -O- https://cpanmin.us | perl - -l $HOME/perl5 App::cpanminus local::lib && echo 'eval \`perl -I $HOME/perl5/lib/perl5 -Mlocal::lib\`' >> $HOME/.bash_profile && echo 'export MANPATH=$HOME/perl5/man:$MANPATH' >> $HOME/.bash_profile
+   <pre><code class="shell">wget -O- https://cpanmin.us | perl - -l $HOME/perl5 App::cpanminus local::lib && echo 'eval `perl -I $HOME/perl5/lib/perl5 -Mlocal::lib`' >> $HOME/.bash_profile && echo 'export MANPATH=$HOME/perl5/man:$MANPATH' >> $HOME/.bash_profile
    . .bash_profile</code></pre>
 1. Install the following dependencies with cpanm again as the dedicated user:
    <pre><code class="shell">cpanm ExtUtils::MakeMaker Mojolicious Text::Wrap Email::Stuffer Sub::Identify namespace::autoclean DateTime HTML::Strip Config::Auto</code></pre>
